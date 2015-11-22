@@ -23,9 +23,13 @@ ENABLE_CORRECTION="true"
 HIST_STAMPS="yyyy-mm-dd"
 
 # User configuration
+export PATH="$HOME/.rbenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
-export PATH=$HOME/.rbenv/shims:$PATH
+
+# path prior to 2015 Nov 21
+# export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+# export PATH=$HOME/.rbenv/shims:$PATH
+
 VISUAL=emacs ; export VISUAL
 EDITOR=emacs ; export EDITOR
 

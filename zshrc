@@ -91,4 +91,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias e='emacs'
+
+# Emacs Aliases
+alias e='emacs .' # open current directory in emacs
+alias es='emacs'  # open scratch folder in emacs

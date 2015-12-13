@@ -33,3 +33,7 @@ alias l3='ssh appozite@leela3.union.corp; ' #open leela3
 alias l4='ssh appozite@leela4.union.corp; ' #open leela4
 alias l8='ssh appozite@leela8.union.corp; ' #open leela8
 
+# Emacs Aliases
+alias "e."='emacs .' # open current directory in emacs
+alias "e"='emacs' # open target file in emacs
+alias es='emacs'  # open scratch folder in emacs

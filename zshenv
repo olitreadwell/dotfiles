@@ -31,4 +31,3 @@ export PATH="$HOME/.rbenv/shims:$PATH"
 
 VISUAL=emacs ; export VISUAL
 EDITOR=emacs ; export EDITOR
-

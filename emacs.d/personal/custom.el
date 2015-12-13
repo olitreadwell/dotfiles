@@ -31,11 +31,6 @@
 (setq-default save-place t)
 (setq save-place-file (expand-file-name ".places" user-emacs-directory))
 
-;; Learn more about Emacs
-(require 'discover)
-(global-discover-mode 1)
-
-
 ;; Auto-complete config
 (require 'auto-complete-config)
 (ac-config-default)

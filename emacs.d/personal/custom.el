@@ -47,3 +47,6 @@
 (global-set-key (kbd "s-p") 'projectile-find-file)
 ;; Press Command-b for fuzzy switch buffer
  (global-set-key (kbd "s-b") 'projectile-switch-to-buffer)
+
+;; Auto Pair Brackets
+(electric-pair-mode 1)

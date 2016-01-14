@@ -5,3 +5,5 @@
 	email = olitreadwell@gmail.com
 [alias]
 	co-pr = "! f() { git fetch origin pull/$1/head:pull-request-$1 && git checkout pull-request-$1; }; f"
+[credential]
+	helper = osxkeychain

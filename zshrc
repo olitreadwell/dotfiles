@@ -53,7 +53,7 @@
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git bundler osx rake ruby rails brew-cask brew common-aliases command-not-found)
+plugins=(git bundler osx rake ruby rails brew-cask brew rbenv common-aliases command-not-found)
 
 
 # User configuration
@@ -91,3 +91,6 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#Rbenv
+eval "$(rbenv init -)"

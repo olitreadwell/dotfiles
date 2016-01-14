@@ -24,7 +24,7 @@ export UPDATE_ZSH_DAYS=1
 HIST_STAMPS="yyyy-mm-dd"
 
 # User configuration
-export PATH="$HOME/.rbenv/shims:$PATH"
+# export PATH="$HOME/.rbenv/shims:$PATH"
 
 # path prior to 2015 Nov 21
 # export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"

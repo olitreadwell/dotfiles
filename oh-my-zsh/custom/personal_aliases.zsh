@@ -1,5 +1,4 @@
-
-# Bash
+# Zsh
 alias opfind="open -a 'Finder'" #open specified directory in finder
 alias edit_host="emacs /etc/hosts" #open hosts filed for editing
 alias edit_aliases="emacs ~/.oh-my-zsh/custom/personal_aliases.zsh" #open personal aliases file in emacs

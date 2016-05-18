@@ -99,3 +99,5 @@ VISUAL=emacs ; export VISUAL
 EDITOR=emacs ; export EDITOR
 
 eval "$(rbenv init -)"
+
+eval "$(docker-machine env default)"

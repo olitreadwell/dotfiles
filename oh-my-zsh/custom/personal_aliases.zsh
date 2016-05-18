@@ -10,3 +10,4 @@ alias gitprepdeploy='git fetch --all; git checkout master; git pull --rebase; gi
 alias "e."='emacs .' # open current directory in emacs
 alias "e"='emacs' # open target file in emacs
 alias es='emacs'  # open scratch folder in emacs
+alias berc='bundle exec rails console'

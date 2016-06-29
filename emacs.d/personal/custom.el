@@ -1,7 +1,4 @@
 ;; Theme
-(disable-theme 'zenburn)
-(setq prelude-theme 'solarized-dark)
-
 ;; Whitespace
 (setq-default show-trailing-whitespace t)
 

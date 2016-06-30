@@ -18,3 +18,7 @@ alias es='emacs'     # open scratch folder in emacs
 # Ruby & Rails
 alias be='bundle exec'
 alias berc='bundle exec rails console'
+
+#SourceTree
+alias "sct."="open -a 'SourceTree' ." # open current directory in SourceTree
+alias "sct"="open -a 'SourceTree'"    # open target file in SourceTree

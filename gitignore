@@ -115,4 +115,7 @@ bower.json
 # Ignore pow environment settings
 .powenv
 
+# Ignore Bypass Mobile Debug APK's
+*/app-debug.apk
+
 ## end rails

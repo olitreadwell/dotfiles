@@ -20,9 +20,12 @@ alias es='emacs'     # open scratch folder in emacs
 alias be='bundle exec'
 alias berc='bundle exec rails console'
 
-#SourceTree
+# SourceTree
 alias "sct."="open -a 'SourceTree' ." # open current directory in SourceTree
 alias "sct"="open -a 'SourceTree'"    # open target file in SourceTree
 
-#Galvanize
-alias grading='cd ~/code/galvanize/g33/grading'
+# Galvanize
+# alias grading='cd ~/code/galvanize/g33/grading'
+
+# Update
+alias update='cd ~/.oh-my-zsh && grhh && gfa && gl && upgrade_oh_my_zsh && bubu && npm update -g && cd ~/code'

@@ -8,6 +8,10 @@ alias rbm="open -a 'RubyMine'"
 alias rbm.="open -a 'RubyMine' ."
 
 # Git Shortcuts
+
+# find all git repos in the directories below and git pull origin master
+alias gitpullall='find . -type d -depth 1 -exec git --git-dir={}/.git --work-tree=$PWD/{} pull origin master \;'
+
 alias gitprepdeploy='git fetch --all; git checkout master; git pull --rebase; git checkout development; git pull --rebase'
 
 # Emacs Aliases
@@ -28,4 +32,4 @@ alias "sct"="open -a 'SourceTree'"    # open target file in SourceTree
 # alias grading='cd ~/code/galvanize/g33/grading'
 
 # Update
-alias update='cd ~/.oh-my-zsh && grhh && gfa && gl && upgrade_oh_my_zsh && bubu && npm update -g && cd ~/code'
+alias "updateupdate"="cd ~/.oh-my-zsh && grhh && gfa && gl && upgrade_oh_my_zsh && bubu && npm update -g && cd ~/code"

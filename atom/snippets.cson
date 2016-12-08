@@ -1,7 +1,16 @@
 '.source.js':
-  'whatsup':
-    'prefix': 'whatsup'
-    'body': 'yo yo yo'
+  'knexDbEnvDefaultConfig':
+    'prefix': 'knexDbEnvDefaultConfig'
+    'body': """
+      // Name of Application
+      const appName = '$1';
+
+      // Default Configuration
+      const knexDbEnvDefaultConfig = {
+        client: 'pg',
+        migrations: './db/migrations/',
+      };
+    """
   'knexDbEnv':
     'prefix': 'knexDbEnv'
     'body': """
@@ -10,7 +19,7 @@
         client: knexDbEnvDefaultConfig.client,
         migrations: knexDbEnvDefaultConfig.migrations,
         connection: {
-          database: '`${appName}_$2`',
+          database: `${appName}_$2`,
         },
         seeds: {
           directory: './db/seeds/$2',
@@ -18,7 +27,7 @@
       },
     """
   'Express Modules':
-    'prefix': 'express modules'
+    'prefix': 'express-modules'
     'body': """
       // instantiate express app
       const express = require('express');
@@ -30,7 +39,7 @@
       const bodyParser = require('body-parser');
     """
   'Express Middleware':
-    'prefix': 'express middleware'
+    'prefix': 'express-middleware'
     'body': """
       // set view engine
       app.set('view engine', 'ejs');
@@ -45,6 +54,25 @@
 
       //Use URL parameter based override
       app.use(methodOverride('_method'));
+    """
+  'Gulp Task':
+    'prefix': 'gulp-task'
+    'body': """
+      // Gulp Task Name
+      gulp.task('$1', () => {
+        //$1
+        const $1;
+      });
+    """
+  'Server Port Listen':
+    'prefix': 'node-server-port-listen'
+    'body': """
+    const port = process.env.PORT || 3000
+
+    // Server listen to Port
+    app.listen(port, () => {
+      console.log('listening on', port);
+    });
     """
 
 # '.text.html.basic'

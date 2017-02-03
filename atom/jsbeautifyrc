@@ -1,0 +1,6 @@
+{
+    "js": {
+        "brace_style": "expand",
+        "preserve_newlines": true,
+    }
+}

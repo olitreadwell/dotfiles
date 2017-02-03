@@ -32,4 +32,4 @@ alias "sct"="open -a 'SourceTree'"    # open target file in SourceTree
 # alias grading='cd ~/code/galvanize/g33/grading'
 
 # Update
-alias "updateupdate"="cd ~/.oh-my-zsh && grhh && gfa && gl && upgrade_oh_my_zsh && bubu && npm update -g && cd ~/code"
+alias "uuupdate"="PWD=$(pwd); cd ~/.oh-my-zsh && grhh && gfa && gl && upgrade_oh_my_zsh && bubu && npm update -g; cd $PWD && npm install && yarn"

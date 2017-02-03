@@ -60,6 +60,7 @@ plugins=(git rails git brew brew-cask cp man node npm osx rake rbenv ruby zsh_re
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
+export PATH="$PATH:`yarn global bin`"
 
 source $ZSH/oh-my-zsh.sh
 

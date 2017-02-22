@@ -101,6 +101,4 @@ EDITOR=emacs ; export EDITOR
 
 eval "$(rbenv init -)"
 
-eval "$(docker-machine env default)"
-
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

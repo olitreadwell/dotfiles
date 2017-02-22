@@ -1,3 +1,10 @@
+'.source.gfm':
+  'Question & Answer':
+    'prefix': 'qa-cfu'
+    'body': """
+    * Q: $1
+      * A: $2
+    """
 '.source.js':
   'knexDbEnvDefaultConfig':
     'prefix': 'knexDbEnvDefaultConfig'
@@ -5,26 +12,53 @@
       // Name of Application
       const appName = '$1';
 
-      // Default Configuration
-      const knexDbEnvDefaultConfig = {
+      // Application Database Configuration Defaults
+      const applicationDatabaseGenerics = {
         client: 'pg',
-        migrations: './db/migrations/',
-      };
+        migrations: __dirname + '/src/server/db/migrations',
+        seeds: __dirname + '/src/server/db/seeds',
+      }
+    """
+  'Const Require':
+    'prefix': 'crq'
+    'body': """
+      // $1 module
+      const $1 = require('$1');
+    """
+  'js test draft':
+    'prefix': 'test'
+    'body': """
+    test('$1', () =>
+    {
+      expect($1)
+        .to();
+    })
+    """
+  'console.log':
+    'prefix': 'log'
+    'body': """
+    console.log(`$1`, `${$2}`);
     """
   'knexDbEnv':
     'prefix': 'knexDbEnv'
     'body': """
-      // '$2' Environment Knex DB Config
-      $2: {
-        client: knexDbEnvDefaultConfig.client,
-        migrations: knexDbEnvDefaultConfig.migrations,
-        connection: {
-          database: `${appName}_$2`,
-        },
-        seeds: {
-          directory: './db/seeds/$2',
-        },
+    // '$1' Environment Knex DB Config
+    $1:
+    {
+      client: applicationDatabaseGenerics.client,
+      migrations:
+      {
+        directory: applicationDatabaseGenerics.migrations,
       },
+      connection:
+      {
+        database: `${appName}-$1`,
+      },
+      seeds:
+      {
+        directory: applicationDatabaseGenerics.migrations + '/$1',
+      },
+    },
     """
   'Express Modules':
     'prefix': 'express-modules'

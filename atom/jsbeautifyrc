@@ -2,5 +2,10 @@
     "js": {
         "brace_style": "expand",
         "preserve_newlines": true,
+        "end_with_comma": false,
+    },
+    "json": {
+        "brace_style": "expand",
+        "preserve_newlines": true,
     }
 }

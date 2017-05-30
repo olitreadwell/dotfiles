@@ -96,9 +96,9 @@ source $ZSH/oh-my-zsh.sh
 # export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export PATH=$HOME/.rbenv/shims:$PATH
 
-VISUAL=emacs ; export VISUAL
-EDITOR=emacs ; export EDITOR
-
-eval "$(rbenv init -)"
+VISUAL='atom -w' ; export VISUAL
+EDITOR='atom -w' ; export EDITOR
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+eval "$(rbenv init -)"

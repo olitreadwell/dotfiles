@@ -34,8 +34,6 @@ alias "sct"="open -a 'SourceTree'"    # open target file in SourceTree
 # Update
 alias "uuupdate"="PWD=$(pwd); cd ~/.oh-my-zsh && grhh && gfa && gl && upgrade_oh_my_zsh && bubu && npm update -g; cd $PWD && npm install && yarn"
 
-# open a random students profile in chrome
-alias "rrandom💻🍍🚨Student"="node ~/code/random-github-profile-from-array/script-run.js"
 
 # initiate npm and install eslint in a file
 function ei-eslint-install()

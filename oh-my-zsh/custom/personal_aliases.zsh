@@ -51,3 +51,11 @@ function ei-eslint-install()
   rm -f ./eslint-install-script-temporary.sh
 }
 alias "ei-eslint-install"=ei-eslint-install
+
+function makeAndMoveIntoDirectory()
+{
+    mkdir $1;
+    cd $1;
+}
+
+alias "mkcd"=makeAndMoveIntoDirectory

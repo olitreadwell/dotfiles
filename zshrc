@@ -8,8 +8,8 @@ export ZSH=/Users/oliver.treadwell/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs nvm)
 DISABLE_UPDATE_PROMPT=true
 
 # Uncomment the following line to use case-sensitive completion.

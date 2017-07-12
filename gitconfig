@@ -1,7 +1,7 @@
 [core]
-	excludesfile = /Users/oliver.treadwell/.gitignore_global
+	excludesfile = /Users/olitreadwell/.gitignore_global
 [user]
-	name = Oli Treadwell
+	name = @olitreadwell
 	email = oliver.treadwell@gmail.com
 [alias]
 	co-pr = "! f() { git fetch origin pull/$1/head:pull-request-$1 && git checkout pull-request-$1; }; f"

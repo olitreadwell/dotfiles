@@ -1,3 +1,19 @@
+'.text.plain':
+  'Email: Simple & Optimistic':
+    'prefix': 'e-simple-optimistic'
+    'body': """
+    Hello {{first name}}!
+
+    Glad to be in touch. How's it going? Hope you're having a fantastic day.
+
+    It'd be awesome to talk further about this. I look forward to hearing back from you.
+
+    Have a great rest of your day.
+
+    Cheers,
+
+    Oli
+    """
 '.source.gfm':
   'Question & Answer':
     'prefix': 'qa-cfu'

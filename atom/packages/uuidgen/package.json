@@ -1,0 +1,102 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-xwqj0e.bmulufecdi/package.tgz",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-xwqj0e.bmulufecdi/package.tgz",
+        "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-xwqj0e.bmulufecdi/package.tgz",
+        "type": "local"
+      },
+      "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117624-46232-1xz66qs.gry97o80k9"
+    ]
+  ],
+  "_from": "../d-117624-46232-xwqj0e.bmulufecdi/package.tgz",
+  "_id": "uuidgen@1.2.1",
+  "_inCache": true,
+  "_location": "/uuidgen",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-xwqj0e.bmulufecdi/package.tgz",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-xwqj0e.bmulufecdi/package.tgz",
+    "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-xwqj0e.bmulufecdi/package.tgz",
+    "type": "local"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "file:../d-117624-46232-xwqj0e.bmulufecdi/package.tgz",
+  "_shasum": "a0163d25fba3d83ac27a02c87a8b4e0cd69064af",
+  "_shrinkwrap": null,
+  "_spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-xwqj0e.bmulufecdi/package.tgz",
+  "_where": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117624-46232-1xz66qs.gry97o80k9",
+  "activationCommands": {
+    "atom-text-editor": [
+      "uuidgen:generate",
+      "uuidgen:generate-upper-case"
+    ]
+  },
+  "bugs": {
+    "url": "https://github.com/nrodrigues/uuidgen/issues"
+  },
+  "dependencies": {
+    "node-uuid": "1.4.1"
+  },
+  "description": "A package to generate UUIDs",
+  "devDependencies": {},
+  "engines": {
+    "atom": ">=0.174.0 <2.0.0"
+  },
+  "homepage": "https://github.com/nrodrigues/uuidgen#readme",
+  "license": "MIT",
+  "main": "./lib/uuidgen",
+  "name": "uuidgen",
+  "optionalDependencies": {},
+  "readme": "# uuidgen package\n\nGenerates a new UUID and inserts it at the current cursor possition.\n\n![uuidgen usage example](https://github.com/nrodrigues/uuidgen/raw/master/usage.gif)\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nrodrigues/uuidgen.git"
+  },
+  "version": "1.2.1",
+  "_atomModuleCache": {
+    "version": 1,
+    "dependencies": [
+      {
+        "name": "node-uuid",
+        "version": "1.4.1",
+        "path": "node_modules/node-uuid/uuid.js"
+      }
+    ],
+    "extensions": {
+      ".coffee": [
+        "lib/uuidgen.coffee"
+      ],
+      ".js": [
+        "node_modules/node-uuid/benchmark/benchmark.js",
+        "node_modules/node-uuid/uuid.js"
+      ],
+      ".json": [
+        "node_modules/node-uuid/component.json",
+        "node_modules/node-uuid/package.json",
+        "package.json"
+      ]
+    },
+    "folders": [
+      {
+        "paths": [
+          "lib",
+          ""
+        ],
+        "dependencies": {
+          "node-uuid": "1.4.1"
+        }
+      }
+    ]
+  }
+}

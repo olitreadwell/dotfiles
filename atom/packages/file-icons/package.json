@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-gpb3c9.6yp8uuwhfr/package.tgz",
+        "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117717-30792-1y69efb.2sf9zr529/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-gpb3c9.6yp8uuwhfr/package.tgz",
-        "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-gpb3c9.6yp8uuwhfr/package.tgz",
+        "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117717-30792-1y69efb.2sf9zr529/package.tgz",
+        "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117717-30792-1y69efb.2sf9zr529/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117624-46232-14p6e81.ezow2ymn29"
+      "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117717-30792-q699np.6x40xm9529"
     ]
   ],
-  "_from": "../d-117624-46232-gpb3c9.6yp8uuwhfr/package.tgz",
-  "_id": "file-icons@2.1.9",
+  "_from": "../d-117717-30792-1y69efb.2sf9zr529/package.tgz",
+  "_id": "file-icons@2.1.11",
   "_inCache": true,
   "_location": "/file-icons",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-gpb3c9.6yp8uuwhfr/package.tgz",
+    "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117717-30792-1y69efb.2sf9zr529/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-gpb3c9.6yp8uuwhfr/package.tgz",
-    "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-gpb3c9.6yp8uuwhfr/package.tgz",
+    "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117717-30792-1y69efb.2sf9zr529/package.tgz",
+    "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117717-30792-1y69efb.2sf9zr529/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-117624-46232-gpb3c9.6yp8uuwhfr/package.tgz",
-  "_shasum": "e1b373415541e4cf60fb3143a4701c546b9fd90a",
+  "_resolved": "file:../d-117717-30792-1y69efb.2sf9zr529/package.tgz",
+  "_shasum": "601d77c7d9eecb392543177e4fb0371300aa3962",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117624-46232-gpb3c9.6yp8uuwhfr/package.tgz",
-  "_where": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117624-46232-14p6e81.ezow2ymn29",
+  "_spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117717-30792-1y69efb.2sf9zr529/package.tgz",
+  "_where": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117717-30792-q699np.6x40xm9529",
   "atomTestRunner": "atom-mocha",
   "bugs": {
     "url": "https://github.com/file-icons/atom/issues"
@@ -112,7 +112,7 @@
   },
   "dependencies": {
     "alhadis.utils": "v0.1.2",
-    "atom-fs": "v0.1.2",
+    "atom-fs": "v0.1.3",
     "micromatch": "*",
     "print": "*"
   },
@@ -152,7 +152,7 @@
     "type": "git",
     "url": "git+https://github.com/file-icons/atom.git"
   },
-  "version": "2.1.9",
+  "version": "2.1.11",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
@@ -188,7 +188,7 @@
       },
       {
         "name": "atom-fs",
-        "version": "0.1.2",
+        "version": "0.1.3",
         "path": "node_modules/atom-fs/index.js"
       },
       {
@@ -213,7 +213,7 @@
       },
       {
         "name": "kind-of",
-        "version": "5.0.0",
+        "version": "5.0.2",
         "path": "node_modules/base/node_modules/kind-of/index.js"
       },
       {
@@ -243,7 +243,7 @@
       },
       {
         "name": "kind-of",
-        "version": "5.0.0",
+        "version": "5.0.2",
         "path": "node_modules/class-utils/node_modules/kind-of/index.js"
       },
       {
@@ -288,7 +288,7 @@
       },
       {
         "name": "kind-of",
-        "version": "5.0.0",
+        "version": "5.0.2",
         "path": "node_modules/expand-brackets/node_modules/kind-of/index.js"
       },
       {
@@ -313,7 +313,7 @@
       },
       {
         "name": "kind-of",
-        "version": "5.0.0",
+        "version": "5.0.2",
         "path": "node_modules/extglob/node_modules/kind-of/index.js"
       },
       {
@@ -393,7 +393,7 @@
       },
       {
         "name": "kind-of",
-        "version": "5.0.0",
+        "version": "5.0.2",
         "path": "node_modules/is-descriptor/node_modules/kind-of/index.js"
       },
       {
@@ -493,7 +493,7 @@
       },
       {
         "name": "kind-of",
-        "version": "5.0.0",
+        "version": "5.0.2",
         "path": "node_modules/object-copy/node_modules/is-descriptor/node_modules/kind-of/index.js"
       },
       {
@@ -583,7 +583,7 @@
       },
       {
         "name": "kind-of",
-        "version": "5.0.0",
+        "version": "5.0.2",
         "path": "node_modules/snapdragon/node_modules/kind-of/index.js"
       },
       {
@@ -638,7 +638,7 @@
       },
       {
         "name": "kind-of",
-        "version": "5.0.0",
+        "version": "5.0.2",
         "path": "node_modules/static-extend/node_modules/kind-of/index.js"
       },
       {
@@ -668,7 +668,7 @@
       },
       {
         "name": "kind-of",
-        "version": "5.0.0",
+        "version": "5.0.2",
         "path": "node_modules/to-regex/node_modules/kind-of/index.js"
       },
       {
@@ -708,7 +708,7 @@
       },
       {
         "name": "kind-of",
-        "version": "5.0.0",
+        "version": "5.0.2",
         "path": "node_modules/use/node_modules/kind-of/index.js"
       }
     ],
@@ -1058,7 +1058,7 @@
         ],
         "dependencies": {
           "alhadis.utils": "v0.1.2",
-          "atom-fs": "v0.1.2",
+          "atom-fs": "v0.1.3",
           "micromatch": "*",
           "print": "*"
         }

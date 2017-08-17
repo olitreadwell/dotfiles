@@ -2,6 +2,7 @@
 /* eslint-env jasmine */
 /* eslint-disable no-template-curly-in-string */
 
+import { TextEditor } from 'atom'
 import { triggerAutocompletion, waitForAutocomplete, buildIMECompositionEvent, buildTextInputEvent } from './spec-helper'
 let temp = require('temp').track()
 import path from 'path'
@@ -2333,6 +2334,94 @@ defm`
       runs(() => {
         let suggestionListView = autocompleteManager.suggestionList.suggestionListElement
         expect(suggestionListView.scrollWidth).toBe(suggestionListView.offsetWidth)
+      })
+    })
+  })
+
+  describe('when watching an external text editor for a given set of provider labels', () => {
+    let [bottomEditor, bottomEditorView, autocompleteDisposable] = []
+    beforeEach(() => {
+      // Activate package.
+      waitsForPromise(() => atom.packages.activatePackage('autocomplete-plus').then((a) => {
+        mainModule = a.mainModule
+      }))
+
+      waitsFor(() => {
+        autocompleteManager = mainModule.autocompleteManager
+        return autocompleteManager
+      })
+
+      // Create external providers with labels.
+      runs(() => {
+        let bottomProvider = {
+          labels: ['bottom-label'],
+          scopeSelector: '*',
+          getSuggestions (options) { return [{text: 'bottom'}] }
+        }
+        mainModule.consumeProvider(bottomProvider)
+
+        let centerProvider = {
+          labels: ['workspace-center'],
+          scopeSelector: '*',
+          getSuggestions (options) { return [{text: 'center'}] }
+        }
+        mainModule.consumeProvider(centerProvider)
+      })
+
+      // Create a regular pane item text editor.
+      waitsForPromise(() =>
+        atom.workspace.open('').then((e) => {
+          editor = e
+          editorView = atom.views.getView(editor)
+        })
+      )
+
+      // Create an editor in the bottom panel,
+      // requesting autocompletions from a given label.
+      runs(() => {
+        bottomEditor = new TextEditor()
+        bottomEditorView = atom.views.getView(bottomEditor)
+        atom.workspace.addBottomPanel({item: bottomEditorView, visible: true})
+        autocompleteDisposable = autocompleteManager.watchEditor(
+            bottomEditor, ['bottom-label'])
+      })
+    })
+
+    it('provides appropriate autocompletions when each editor is focused.', () => {
+      runs(() => {
+        bottomEditorView.focus()
+        triggerAutocompletion(bottomEditor)
+      })
+
+      runs(() => {
+        expect(editorView.querySelector('.autocomplete-plus')).not.toExist()
+
+        let items = bottomEditorView.querySelectorAll('.autocomplete-plus li')
+        expect(items.length).toEqual(1)
+        expect(items[0].innerText.trim()).toEqual('bottom')
+      })
+
+      runs(() => {
+        editorView.focus()
+        triggerAutocompletion(editor)
+      })
+
+      runs(() => {
+        expect(bottomEditorView.querySelector('.autocomplete-plus')).not.toExist()
+
+        let items = editorView.querySelectorAll('.autocomplete-plus li')
+        expect(items.length).toEqual(1)
+        expect(items[0].innerText.trim()).toEqual('center')
+      })
+    })
+
+    it('stops providing autocompletions when disposed.', () => {
+      autocompleteDisposable.dispose()
+      bottomEditorView.focus()
+      triggerAutocompletion(bottomEditor)
+
+      runs(() => {
+        expect(bottomEditorView.querySelector('.autocomplete-plus')).not.toExist()
       })
     })
   })

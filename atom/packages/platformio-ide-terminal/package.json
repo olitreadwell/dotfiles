@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-35176-144o4bd.inpmnrvn29/package.tgz",
+        "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-11779-31532-1uuepp6.oje6hcl3di/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-35176-144o4bd.inpmnrvn29/package.tgz",
-        "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-35176-144o4bd.inpmnrvn29/package.tgz",
+        "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-11779-31532-1uuepp6.oje6hcl3di/package.tgz",
+        "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-11779-31532-1uuepp6.oje6hcl3di/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117627-35176-1r10jbd.jkbfx647vi"
+      "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-11779-31532-1uucyls.b1r7t7f1or"
     ]
   ],
-  "_from": "../d-117627-35176-144o4bd.inpmnrvn29/package.tgz",
-  "_id": "platformio-ide-terminal@2.5.4",
+  "_from": "../d-11779-31532-1uuepp6.oje6hcl3di/package.tgz",
+  "_id": "platformio-ide-terminal@2.5.5",
   "_inCache": true,
   "_location": "/platformio-ide-terminal",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-35176-144o4bd.inpmnrvn29/package.tgz",
+    "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-11779-31532-1uuepp6.oje6hcl3di/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-35176-144o4bd.inpmnrvn29/package.tgz",
-    "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-35176-144o4bd.inpmnrvn29/package.tgz",
+    "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-11779-31532-1uuepp6.oje6hcl3di/package.tgz",
+    "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-11779-31532-1uuepp6.oje6hcl3di/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-117627-35176-144o4bd.inpmnrvn29/package.tgz",
-  "_shasum": "6907b459f66380cda3c97679cb1d29dbd4156bfe",
+  "_resolved": "file:../d-11779-31532-1uuepp6.oje6hcl3di/package.tgz",
+  "_shasum": "3dab346b1a23b39ced4fe7185ca6db1aee6c8971",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-35176-144o4bd.inpmnrvn29/package.tgz",
-  "_where": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117627-35176-1r10jbd.jkbfx647vi",
+  "_spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-11779-31532-1uuepp6.oje6hcl3di/package.tgz",
+  "_where": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-11779-31532-1uucyls.b1r7t7f1or",
   "activationHooks": [
     "core:loaded-shell-environment"
   ],
@@ -113,7 +113,7 @@
     "type": "git",
     "url": "git+https://github.com/platformio/platformio-atom-ide-terminal.git"
   },
-  "version": "2.5.4",
+  "version": "2.5.5",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
@@ -134,7 +134,7 @@
       },
       {
         "name": "es5-ext",
-        "version": "0.10.24",
+        "version": "0.10.26",
         "path": "node_modules/es5-ext/index.js"
       },
       {
@@ -583,6 +583,7 @@
         "node_modules/es5-ext/object/validate-array-like.js",
         "node_modules/es5-ext/object/validate-stringifiable-value.js",
         "node_modules/es5-ext/object/validate-stringifiable.js",
+        "node_modules/es5-ext/optional-chaining.js",
         "node_modules/es5-ext/reg-exp/#/index.js",
         "node_modules/es5-ext/reg-exp/#/is-sticky.js",
         "node_modules/es5-ext/reg-exp/#/is-unicode.js",
@@ -830,20 +831,14 @@
         "package.json"
       ],
       ".node": [
-        "node_modules/pty.js/bin/darwin/ia32.m46.node",
-        "node_modules/pty.js/bin/darwin/x64.m46.node",
-        "node_modules/pty.js/bin/darwin/x64.m47.node",
-        "node_modules/pty.js/bin/darwin/x64.m49.node",
-        "node_modules/pty.js/bin/linux/ia32.m46.node",
-        "node_modules/pty.js/bin/linux/x64.m46.node",
-        "node_modules/pty.js/bin/linux/x64.m47.node",
-        "node_modules/pty.js/bin/linux/x64.m49.node",
-        "node_modules/pty.js/bin/win32/ia32.m46.node",
-        "node_modules/pty.js/bin/win32/ia32.m47.node",
-        "node_modules/pty.js/bin/win32/ia32.m49.node",
-        "node_modules/pty.js/bin/win32/x64.m46.node",
-        "node_modules/pty.js/bin/win32/x64.m47.node",
-        "node_modules/pty.js/bin/win32/x64.m49.node",
+        "node_modules/pty.js/bin/darwin/x64_m49/pty.node",
+        "node_modules/pty.js/bin/darwin/x64_m53/pty.node",
+        "node_modules/pty.js/bin/linux/x64_m49/pty.node",
+        "node_modules/pty.js/bin/linux/x64_m53/pty.node",
+        "node_modules/pty.js/bin/win32/ia32_m49/pty.node",
+        "node_modules/pty.js/bin/win32/ia32_m53/pty.node",
+        "node_modules/pty.js/bin/win32/x64_m49/pty.node",
+        "node_modules/pty.js/bin/win32/x64_m53/pty.node",
         "node_modules/pty.js/build/Release/pty.node"
       ]
     },
@@ -1140,9 +1135,14 @@
       },
       {
         "paths": [
-          "node_modules/pty.js/bin/darwin",
-          "node_modules/pty.js/bin/linux",
-          "node_modules/pty.js/bin/win32",
+          "node_modules/pty.js/bin/darwin/x64_m49",
+          "node_modules/pty.js/bin/darwin/x64_m53",
+          "node_modules/pty.js/bin/linux/x64_m49",
+          "node_modules/pty.js/bin/linux/x64_m53",
+          "node_modules/pty.js/bin/win32/ia32_m49",
+          "node_modules/pty.js/bin/win32/ia32_m53",
+          "node_modules/pty.js/bin/win32/x64_m49",
+          "node_modules/pty.js/bin/win32/x64_m53",
           "node_modules/pty.js/build/Release",
           "node_modules/pty.js",
           "node_modules/pty.js/lib",

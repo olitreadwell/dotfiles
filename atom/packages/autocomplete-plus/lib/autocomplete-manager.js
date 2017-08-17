@@ -1,20 +1,19 @@
-'use babel'
+const {Range, CompositeDisposable, Disposable} = require('atom')
+const path = require('path')
+const semver = require('semver')
+const fuzzaldrin = require('fuzzaldrin')
+const fuzzaldrinPlus = require('fuzzaldrin-plus')
 
-import { Range, CompositeDisposable, Disposable } from 'atom'
-import path from 'path'
-import semver from 'semver'
-import fuzzaldrin from 'fuzzaldrin'
-import fuzzaldrinPlus from 'fuzzaldrin-plus'
-
-import ProviderManager from './provider-manager'
-import SuggestionList from './suggestion-list'
-import { UnicodeLetters } from './unicode-helpers'
+const ProviderManager = require('./provider-manager')
+const SuggestionList = require('./suggestion-list')
+const {UnicodeLetters} = require('./unicode-helpers')
 
 // Deferred requires
 let minimatch = null
 let grim = null
 
-export default class AutocompleteManager {
+module.exports =
+class AutocompleteManager {
   constructor () {
     this.autosaveEnabled = false
     this.backspaceTriggersAutocomplete = true
@@ -24,6 +23,7 @@ export default class AutocompleteManager {
     this.compositionInProgress = false
     this.disposed = false
     this.editor = null
+    this.editorLabels = null
     this.editorSubscriptions = null
     this.editorView = null
     this.providerManager = null
@@ -45,9 +45,15 @@ export default class AutocompleteManager {
     this.toggleActivationForBufferChange = this.toggleActivationForBufferChange.bind(this)
     this.showOrHideSuggestionListForBufferChanges = this.showOrHideSuggestionListForBufferChanges.bind(this)
     this.showOrHideSuggestionListForBufferChange = this.showOrHideSuggestionListForBufferChange.bind(this)
-    this.subscriptions = new CompositeDisposable()
     this.providerManager = new ProviderManager()
     this.suggestionList = new SuggestionList()
+  }
+
+  initialize () {
+    this.subscriptions = new CompositeDisposable()
+
+    this.providerManager.initialize()
+    this.suggestionList.initialize()
 
     this.subscriptions.add(atom.config.observe('autocomplete-plus.enableExtendedUnicodeSupport', enableExtendedUnicodeSupport => {
       if (enableExtendedUnicodeSupport) {
@@ -70,8 +76,8 @@ export default class AutocompleteManager {
     this.snippetsManager = snippetsManager
   }
 
-  updateCurrentEditor (currentEditor) {
-    if ((currentEditor == null) || currentEditor === this.editor) { return }
+  updateCurrentEditor (currentEditor, labels) {
+    if (currentEditor === this.editor) { return }
     if (this.editorSubscriptions) {
       this.editorSubscriptions.dispose()
     }
@@ -85,8 +91,10 @@ export default class AutocompleteManager {
 
     if (!this.editorIsValid(currentEditor)) { return }
 
-    // Track the new editor, editorView, and buffer
+    // Track the new editor, editorView, and buffer and set
+    // the labels for its providers.
     this.editor = currentEditor
+    this.editorLabels = labels
     this.editorView = atom.views.getView(this.editor)
     this.buffer = this.editor.getBuffer()
 
@@ -132,22 +140,45 @@ export default class AutocompleteManager {
     if (typeof atom.workspace.isTextEditor === 'function') {
       return atom.workspace.isTextEditor(editor)
     } else {
-      if (editor == null) { return false }
+      if (!editor) { return false }
       // Should we disqualify TextEditors with the Grammar text.plain.null-grammar?
       return (editor.getText != null)
     }
   }
 
-  handleEvents () {
-    this.subscriptions.add(atom.textEditors.observe((editor) => {
-      const view = atom.views.getView(editor)
-      if (view === document.activeElement.closest('atom-text-editor')) {
-        this.updateCurrentEditor(editor)
+  // Makes the autocomplete manager watch the `editor`.
+  // When the watched `editor` is focused, it will provide autocompletions from
+  // providers with the given `labels`.
+  //
+  // Returns a {Disposable} to stop watching the `editor`.
+  watchEditor (editor, labels) {
+    let view = atom.views.getView(editor)
+
+    if (view.hasFocus()) {
+      this.updateCurrentEditor(editor, labels)
+    }
+
+    let focusListener = (element) => this.updateCurrentEditor(editor, labels)
+    view.addEventListener('focus', focusListener)
+    let blurListener = (element) => this.hideSuggestionList()
+    view.addEventListener('blur', blurListener)
+
+    let disposable = new Disposable(() => {
+      view.removeEventListener('focus', focusListener)
+      view.removeEventListener('blur', blurListener)
+      if (this.editor === editor) {
+        this.updateCurrentEditor(null)
       }
-      view.addEventListener('focus', (element) => {
-        this.updateCurrentEditor(editor)
-      })
-    }))
+    })
+    this.subscriptions.add(disposable)
+    return new Disposable(() => {
+      disposable.dispose()
+      this.subscriptions.remove(disposable)
+    })
+  }
+
+  handleEvents () {
+    this.subscriptions.add(atom.workspace.observeTextEditors((editor) => { this.watchEditor(editor, ['workspace-center']) }))
 
     // Watch config values
     this.subscriptions.add(atom.config.observe('autosave.enabled', (value) => { this.autosaveEnabled = value }))
@@ -207,7 +238,7 @@ export default class AutocompleteManager {
 
   getSuggestionsFromProviders (options) {
     let suggestionsPromise
-    const providers = this.providerManager.applicableProviders(options.editor, options.scopeDescriptor)
+    const providers = this.providerManager.applicableProviders(this.editorLabels, options.scopeDescriptor)
 
     const providerPromises = []
     providers.forEach(provider => {

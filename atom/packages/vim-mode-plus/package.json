@@ -2,39 +2,39 @@
   "_args": [
     [
       {
-        "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-46303-1fexrrn.m6oan8w7b9/package.tgz",
+        "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117715-7439-ftan4s.oxfbsjdcxr/package.tgz",
         "scope": null,
         "escapedName": null,
         "name": null,
-        "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-46303-1fexrrn.m6oan8w7b9/package.tgz",
-        "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-46303-1fexrrn.m6oan8w7b9/package.tgz",
+        "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117715-7439-ftan4s.oxfbsjdcxr/package.tgz",
+        "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117715-7439-ftan4s.oxfbsjdcxr/package.tgz",
         "type": "local"
       },
-      "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117627-46303-10tkr4o.f54ktsxlxr"
+      "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117715-7439-1hf1zye.7ayjkprpb9"
     ]
   ],
-  "_from": "../d-117627-46303-1fexrrn.m6oan8w7b9/package.tgz",
-  "_id": "vim-mode-plus@0.96.2",
+  "_from": "../d-117715-7439-ftan4s.oxfbsjdcxr/package.tgz",
+  "_id": "vim-mode-plus@0.97.2",
   "_inCache": true,
   "_location": "/vim-mode-plus",
   "_phantomChildren": {},
   "_requested": {
-    "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-46303-1fexrrn.m6oan8w7b9/package.tgz",
+    "raw": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117715-7439-ftan4s.oxfbsjdcxr/package.tgz",
     "scope": null,
     "escapedName": null,
     "name": null,
-    "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-46303-1fexrrn.m6oan8w7b9/package.tgz",
-    "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-46303-1fexrrn.m6oan8w7b9/package.tgz",
+    "rawSpec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117715-7439-ftan4s.oxfbsjdcxr/package.tgz",
+    "spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117715-7439-ftan4s.oxfbsjdcxr/package.tgz",
     "type": "local"
   },
   "_requiredBy": [
     "#USER"
   ],
-  "_resolved": "file:../d-117627-46303-1fexrrn.m6oan8w7b9/package.tgz",
-  "_shasum": "3b3b61a809641af36e16f31038be0e1909b149f5",
+  "_resolved": "file:../d-117715-7439-ftan4s.oxfbsjdcxr/package.tgz",
+  "_shasum": "a49ecaa7aac3e95b318631227e17487711337f7e",
   "_shrinkwrap": null,
-  "_spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117627-46303-1fexrrn.m6oan8w7b9/package.tgz",
-  "_where": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117627-46303-10tkr4o.f54ktsxlxr",
+  "_spec": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/d-117715-7439-ftan4s.oxfbsjdcxr/package.tgz",
+  "_where": "/private/var/folders/jz/2l8_0t7d2rq2d0c7v2kb51zc0000gp/T/apm-install-dir-117715-7439-1hf1zye.7ayjkprpb9",
   "bugs": {
     "url": "https://github.com/t9md/atom-vim-mode-plus/issues"
   },
@@ -66,7 +66,7 @@
     "semver": "^5.3.0"
   },
   "engines": {
-    "atom": "^1.18.0"
+    "atom": "^1.19.0"
   },
   "homepage": "https://github.com/t9md/atom-vim-mode-plus#readme",
   "license": "MIT",
@@ -89,11 +89,11 @@
     "url": "git+https://github.com/t9md/atom-vim-mode-plus.git"
   },
   "scripts": {
-    "prettier": "prettier --write --no-semi --print-width=100 --no-bracket-spacing --trailing-comma=es5 'lib/**/*.js' 'spec/*.js'",
+    "prettier": "prettier --write --no-semi --print-width=120 --no-bracket-spacing --trailing-comma=es5 'lib/**/*.js' 'spec/*.js'",
     "test": "apm test",
     "watch": "fswatch -0 spec lib | xargs -0 -n1 -I{} apm test"
   },
-  "version": "0.96.2",
+  "version": "0.97.2",
   "_atomModuleCache": {
     "version": 1,
     "dependencies": [
@@ -149,7 +149,7 @@
       },
       {
         "name": "es5-ext",
-        "version": "0.10.24",
+        "version": "0.10.27",
         "path": "node_modules/es5-ext/index.js"
       },
       {
@@ -360,45 +360,45 @@
       ],
       ".coffee": [
         "lib/base.coffee",
-        "lib/blockwise-selection.coffee",
         "lib/command-table.coffee",
-        "lib/cursor-style-manager.coffee",
-        "lib/developer.coffee",
-        "lib/errors.coffee",
-        "lib/flash-manager.coffee",
-        "lib/global-state.coffee",
-        "lib/highlight-search-manager.coffee",
-        "lib/hover-manager.coffee",
-        "lib/input.coffee",
-        "lib/introspection.coffee",
-        "lib/main.coffee",
-        "lib/mark-manager.coffee",
         "lib/misc-command.coffee",
-        "lib/mode-manager.coffee",
         "lib/motion-search.coffee",
         "lib/motion.coffee",
-        "lib/mutation-manager.coffee",
-        "lib/occurrence-manager.coffee",
-        "lib/operation-stack.coffee",
         "lib/operator-insert.coffee",
         "lib/operator-transform-string.coffee",
         "lib/operator.coffee",
-        "lib/pair-finder.coffee",
-        "lib/persistent-selection-manager.coffee",
-        "lib/register-manager.coffee",
-        "lib/search-history-manager.coffee",
-        "lib/search-input.coffee",
-        "lib/search-model.coffee",
-        "lib/select-list.coffee",
-        "lib/selection-wrapper.coffee",
-        "lib/settings.coffee",
-        "lib/status-bar-manager.coffee",
-        "lib/text-object.coffee",
-        "lib/utils.coffee",
-        "lib/vim-state.coffee"
+        "lib/text-object.coffee"
       ],
       ".js": [
+        "lib/blockwise-selection.js",
+        "lib/cursor-style-manager.js",
+        "lib/demo-mode-support.js",
+        "lib/developer.js",
+        "lib/errors.js",
+        "lib/flash-manager.js",
+        "lib/global-state.js",
+        "lib/highlight-search-manager.js",
+        "lib/hover-manager.js",
+        "lib/input.js",
+        "lib/main.js",
+        "lib/mark-manager.js",
+        "lib/mode-manager.js",
+        "lib/mutation-manager.js",
+        "lib/occurrence-manager.js",
+        "lib/operation-stack.js",
+        "lib/pair-finder.js",
         "lib/pane-utils.js",
+        "lib/persistent-selection-manager.js",
+        "lib/register-manager.js",
+        "lib/search-history-manager.js",
+        "lib/search-input.js",
+        "lib/search-model.js",
+        "lib/select-list.js",
+        "lib/selection-wrapper.js",
+        "lib/settings.js",
+        "lib/status-bar-manager.js",
+        "lib/utils.js",
+        "lib/vim-state.js",
         "node_modules/async/dist/async.js",
         "node_modules/async/dist/async.min.js",
         "node_modules/async/lib/async.js",
@@ -715,6 +715,7 @@
         "node_modules/es5-ext/object/copy.js",
         "node_modules/es5-ext/object/count.js",
         "node_modules/es5-ext/object/create.js",
+        "node_modules/es5-ext/object/ensure-finite-number.js",
         "node_modules/es5-ext/object/ensure-natural-number-value.js",
         "node_modules/es5-ext/object/ensure-natural-number.js",
         "node_modules/es5-ext/object/ensure-promise.js",
@@ -733,6 +734,7 @@
         "node_modules/es5-ext/object/is-copy-deep.js",
         "node_modules/es5-ext/object/is-copy.js",
         "node_modules/es5-ext/object/is-empty.js",
+        "node_modules/es5-ext/object/is-finite-number.js",
         "node_modules/es5-ext/object/is-number-value.js",
         "node_modules/es5-ext/object/is-object.js",
         "node_modules/es5-ext/object/is-plain-object.js",
@@ -766,6 +768,7 @@
         "node_modules/es5-ext/object/validate-array-like.js",
         "node_modules/es5-ext/object/validate-stringifiable-value.js",
         "node_modules/es5-ext/object/validate-stringifiable.js",
+        "node_modules/es5-ext/optional-chaining.js",
         "node_modules/es5-ext/reg-exp/#/index.js",
         "node_modules/es5-ext/reg-exp/#/is-sticky.js",
         "node_modules/es5-ext/reg-exp/#/is-unicode.js",

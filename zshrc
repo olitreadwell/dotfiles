@@ -96,8 +96,8 @@ source $ZSH/oh-my-zsh.sh
 # export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export PATH=$HOME/.rbenv/shims:$PATH
 
-VISUAL='atom -w' ; export VISUAL
-EDITOR='atom -w' ; export EDITOR
+VISUAL='code -w' ; export VISUAL
+EDITOR='code -w' ; export EDITOR
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 

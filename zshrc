@@ -8,8 +8,8 @@ export ZSH=/Users/olitreadwell/.oh-my-zsh
 ZSH_THEME="powerlevel9k/powerlevel9k"
 POWERLEVEL9K_PROMPT_ON_NEWLINE=true
 POWERLEVEL9K_SHORTEN_DIR_LENGTH=1
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(node_version)
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs nvm)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=()
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 DISABLE_UPDATE_PROMPT=true
 
 # Uncomment the following line to use case-sensitive completion.
@@ -54,7 +54,7 @@ HIST_STAMPS="yyyy-mm-dd"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git rails git brew brew-cask cp man node npm osx rake rbenv ruby zsh_reload)
+plugins=(git brew cp man node npm osx rbenv ruby zsh_reload)
 
 # User configuration
 
